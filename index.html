@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Currency Converter App</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<div class="wrapper">
+    
+    <header style="color: yellow">
+        <div class="logo-container">
+            <img src="55c67a110bcadb64bac46048a5fc63a7.jpg" alt="Your Logo">
+          </div>
+        Currency Converter</header>
+    <form id="converter-form">
+        <div class="amount">
+            <p style="color: yellow">Enter Amount</p>
+            <input type="text" id="amount" value="1">
+        </div>
+        <div class="drop-list">
+            <div class="from">
+                <p style="color: yellow">From</p>
+                <div class="select-box">
+                    <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                    <select id="from-currency"> <!-- Options tag are inserted from JavaScript --> </select>
+                </div>
+            </div>
+            <div class="icon" style="color: yellow"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+                <p style="color: yellow">To</p>
+                <div class="select-box">
+                    <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                    <select id="to-currency"> <!-- Options tag are inserted from JavaScript --> </select>
+                </div>
+            </div>
+        </div>
+        <div class="exchange-rate" style="color: yellow"></div>
+        <button style="background-color: blue; color: white">Convert Now</button>
+    </form>
+    <div id="flags" class="flags"></div>
+</div>
+
+
+<script src="country.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
